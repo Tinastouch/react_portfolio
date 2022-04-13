@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from '../assets/steve-dusome-resume.pdf'
+import resume from '../assets/Tina-Sutherland-Resume-2022.pdf'
 
 import downloadicon from '../assets/icons-download.svg'
 
@@ -9,9 +9,9 @@ export default function ResumePage (){
 
         <div className="contact-div">
 
-        <div className="contact-icon">
+        <div className="download-icon">
            <a href={resume} download >
-                <img src={downloadicon} className="contact-icon-img" alt="Github" />
+                <img src={downloadicon} className="download-icon-img" alt="Github" />
             </a>
         </div>
         </div>

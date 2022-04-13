@@ -1,12 +1,13 @@
 import React from 'react'
 import portphoto1 from '../assets/spacedout.png'
 import portphoto2 from '../assets/imagesmash.png'
-import portphoto3 from '../assets/oldport.png'
-import portphoto4 from '../assets/codequiz.png'
+import portphoto3 from '../assets/portfolio-old.png'
+import portphoto4 from '../assets/code-quiz-screenshot.png'
 
 export default function PortfolioPage (){
     return (<div>
         <h3>Portfolio</h3>
+        <div className="row-gapper">
         <div className="portfolio-parent">
         <div className="caption">
                     <p>Spaced Out</p>
@@ -21,7 +22,7 @@ export default function PortfolioPage (){
 
             </div>
             <div className="portfolio-child port2">
-            <a href="https://stevedusome.github.io/Group-Project/" target="_blank">
+            <a href="https://tinastouch.github.io/Group-Project/" target="_blank">
             <img src={portphoto2} className="portphoto" alt="ImageSmash" />
             </a>
                 
@@ -37,13 +38,13 @@ export default function PortfolioPage (){
                     <p>Portfolio</p>
                 </div>
             <div className="portfolio-child port3">
-            <a href="https://stevedusome.github.io/portfolio/" target="_blank">
+            <a href=" https://tinastouch.github.io/Tina-s-professional-Portfolio/" target="_blank">
             <img src={portphoto3} className="portphoto" alt="Old Portfolio" />
             </a>
                 
             </div>
             <div className="portfolio-child port4">
-            <a href="https://stevedusome.github.io/codequiz/" target="_blank">
+            <a href="https://tinastouch.github.io/Code-quiz-new/" target="_blank">
             <img src={portphoto4} className="portphoto" alt="Codequiz" />
             </a>
           
@@ -52,7 +53,7 @@ export default function PortfolioPage (){
                     <p>Javascript</p>
                     <p>Code Quiz</p>
                 </div>
-        </div>
+        </div></div>
     </div>)
       
     

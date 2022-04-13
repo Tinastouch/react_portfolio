@@ -85,6 +85,10 @@ select {
   font: inherit;
 }
 
+input, textarea {
+  color: #3e3e3e70;
+}
+
 body {
   background-color: #f5f5f5;
 
@@ -99,7 +103,7 @@ body {
 
 .App-header {
   height: 5em;
-  box-shadow: 0px 10px 35px #d0d0d0;
+  box-shadow: 0px 10px 35px #d0d0d052;
   display:flex;
   justify-content: space-between;
   align-items: center;
@@ -124,8 +128,8 @@ body {
   font-size: 1em;
   padding: 1em 2em;
   border-radius: 5px;
-  box-shadow: 3px 3px 5px #d0d0d0,
-  -3px -3px 5px #ffffff;
+  box-shadow: 3px 3px 5px #d0d0d052,
+  -3px -3px 5px #ffffff52;
 }
 
 .iconwing {
@@ -140,7 +144,7 @@ body {
 
 .bottombar {
   min-width: 8em;
-  max-width: 60%;
+  max-width: 70%;
   margin: 1.5em auto;
   border-radius: 5px;
   min-height: 4.5em;
@@ -217,8 +221,8 @@ inset -3px -3px 5px #ffffff;
   min-height: 70vh;
   margin: 3em auto;
   background-color: #f5f5f5;
-  box-shadow: 20px 20px 35px #d0d0d0,
-  -20px -20px 35px #ffffff,
+  box-shadow: 20px 20px 35px #d0d0d052,
+  -20px -20px 35px #ffffff52,
   inset -3px -3px 5px #d0d0d0,
   inset 3px 3px 5px #ffffff;
   border-radius: 20px;
@@ -228,8 +232,8 @@ inset -3px -3px 5px #ffffff;
   width: 8em;
   height: 8em;
   margin: 3em auto;
-  box-shadow: 20px 20px 35px #d0d0d0,
-  -20px -20px 35px #ffffff,
+  box-shadow: 20px 20px 35px #d0d0d052,
+  -20px -20px 35px #ffffff52,
   inset -3px -3px 5px #d0d0d0,
   inset 3px 3px 5px #ffffff;
   border-radius: 20px;
@@ -252,6 +256,16 @@ inset -3px -3px 5px #ffffff;
   gap: 1em;
 }
 
+.row-gapper {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: 45vh;
+  align-items: center;
+  justify-content: center;
+}
+
 .my-photo {
   max-width: 100%;
   height: 37vh;
@@ -266,10 +280,6 @@ inset -3px -3px 5px #ffffff;
   gap: 1em;
   justify-content: center;
   align-items: center;
-}
-
-.portfolio-parent:first-of-type {
-  margin-bottom: 1em;
 }
 
 .portfolio-child {
@@ -327,16 +337,92 @@ inset -3px -3px 5px #ffffff;
 .contact-div {
   margin: 0 auto;
   width: 100%;
-  height: 43vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .contact-icon-img {
-  width: 60px;
-  height: 60px;
-  opacity: 40%;
+  width: 40px;
+  height: 40px;
+  opacity: 35%;
+}
+
+.download-icon-img {
+  width: 120px;
+  height: 120px;
+  opacity: 35%;
+  margin-top: 60%;
+}
+
+
+.contact-form {
+  min-width: 70%;
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 0em 2em;
+  font-size: 1em;
+  color: #3e3e3e70;
+  justify-content: center;
+}
+
+.email-label, .input-label {
+min-width: 6em;
+width: 20%;
+}
+
+.submit-btn {
+  padding: 1em;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  border: none;
+  box-shadow: 3px 3px 5px #d0d0d0,
+  -3px -3px 5px #ffffff;
+  color: #3e3e3e70;
+}
+
+.email-input, .message-input {
+  flex-grow: 1;
+  outline:none;
+  border: none;
+  box-shadow: inset 3px 3px 5px #d0d0d0,
+    inset -3px -3px 5px #ffffff;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+
+}
+.email-input:focus, .email-input:hover, .message-input:focus, .message-input:hover {
+  outline:none;
+  border: none;
+}
+
+.email-input {
+  height: 2em;
+}
+
+.message-input {
+  min-height: 5em;
+  max-height: 6em;
+  padding: 0.3em;
+  resize: none;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-parent {
+  width: 100%;
+  min-height: 70vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .download-icon-img {
@@ -346,5 +432,146 @@ inset -3px -3px 5px #ffffff;
 }
 
 .contact-icon {
-  padding: 2em;
+  padding: 1em;
+}
+
+@media screen and (max-width: 1050px) {
+  .App-header {
+    height: 5em;
+    box-shadow: 0px 10px 35px #d0d0d0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.5em;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  .maindiv {
+   width: 75%;
+  }
+
+  .portfolio-parent {
+    min-height: 12vw;
+
+  }
+
+  .portfolio-child{
+    width: 12vw;
+    height: 12vw;
+
+  }
+}
+
+@media screen and (max-width: 768px){
+
+
+
+.App-header {height: fit-content;
+  min-height: 10em;
+  flex-direction: column;
+  justify-content: space-around;
+  position:relative
+}
+
+.maindiv {
+  order: -1;
+  width: 90%;
+}
+
+
+.fullparent {
+  padding-top: 0em;
+  flex-wrap: wrap;
+  height: fit-content;
+  min-height: 100vh;
+}
+
+.bigbtn {
+  margin: 0px auto 1.5em;
+  position: relative;
+  top: -1.5em;
+
+}
+
+.bottombar {
+  max-width: 90%;
+}
+
+.navparent {
+  flex-wrap: wrap;
+  margin: 1em auto
+}
+
+
+
+}
+
+@media screen and (max-width: 450px){
+.navbar {
+  width: 45%;
+  flex-grow: 1;
+  font-size: 12px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form {
+  width: 90%;
+}
+
+.email-input, .message-input {
+  width: 100%;
+}
+
+
+
+h3 {
+  font-size: 30px;
+}
+
+.maindiv {
+  width: 100%;
+  margin: 2em 0em;
+}
+
+.parent {
+  padding-inline: 1em;
+}
+
+.center {
+  display:flex;
+  flex-direction: column;
+}
+
+.iconwing {
+  flex-direction: row;
+  min-height: fit-content;
+  border: none;
+  gap: 1em;
+  padding: 0em 0em;
+}
+
+.iconwing p {
+  border-bottom: none;
+}
+
+.contact-icon {
+  padding: 0.5em;
+}
+
+.bottombar {
+  margin: 0.5em auto 1.5em;
+}
+
+p {
+  font-size: 12px;
+}
+
 }

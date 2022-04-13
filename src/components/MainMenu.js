@@ -1,7 +1,7 @@
 import React from 'react'
-import myphoto from '../assets/myphoto.jpg'
+import myphoto from '../assets/myphoto.png'
 
-export default function MainMenu (){
+export default function MainMenu (props){
     return (<div>
         <h3>About Me</h3>
         <div className="parent fullwidth center"> 
@@ -28,18 +28,19 @@ export default function MainMenu (){
 
             </div>
             <div>
-                <p className="bold">Fanshawe</p>
-                <p>Audio Post</p>
+                <p className="bold">OCAD</p>
+                <p>BFA Fine Arts</p>
                 
             </div>
             <div>
-                <p className="bold">Fanshawe</p>
-                <p>Music</p>
+                <p className="bold">Shaw Academy</p>
+                <p>Graphic Design</p>
 
             </div>
         
-        </div>
-    </div>)
+        </div> 
+        {/* <button className= "more" onClick={() => props.setCurrentPage("MoreInfo")}>More</button> */}
+    </div>) 
       
     
 };
